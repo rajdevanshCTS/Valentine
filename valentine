@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine Question</title>
+<style>
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: #ffe6f0;
+        overflow: hidden;
+    }
+
+    h1 {
+        margin-top: 50px;
+        color: #ff3366;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    #yesBtn {
+        background-color: green;
+        color: white;
+    }
+
+    #noBtn {
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 300px;
+        left: 0;
+        animation: move 0.4s linear infinite alternate;
+    }
+
+    @keyframes move {
+        from { left: 0; }
+        to { left: 90%; }
+    }
+
+    img {
+        width: 200px;
+        margin-top: 30px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Will you be my Valentine? ❤️</h1>
+
+<img src="https://i.imgur.com/4AiXzf8.jpeg" alt="Cute Teddy Bear">
+
+<br>
+
+<button id="yesBtn" class="btn">Yes</button>
+<button id="noBtn" class="btn">No</button>
+
+<script>
+    document.getElementById("yesBtn").onclick = function() {
+        alert("Congratulations, you had no other choice ❤️");
+    };
+
+    document.getElementById("noBtn").onclick = function() {
+        alert("Sorry, wrong choice 😜");
+    };
+</script>
+
+</body>
+</html>
